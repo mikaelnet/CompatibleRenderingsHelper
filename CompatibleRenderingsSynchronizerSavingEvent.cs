@@ -5,7 +5,7 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 
-namespace Stendahls.Sc.CompatibleRenderingsHelper
+namespace Stendahls.Sc.CompatibleRenderingsSynchronizer
 {
     /// <summary>
     /// This event handler typically triggers on saving an item
@@ -13,7 +13,7 @@ namespace Stendahls.Sc.CompatibleRenderingsHelper
     /// and updates the referenced rendering items with the equivalent
     /// data.
     /// </summary>
-    public class CompatibleRenderingsHelperSavingEvent
+    public class CompatibleRenderingsSynchronizerSavingEvent
     {
         public string Database { get; set; }
         public static readonly ID CompatibleRenderingsFieldID = new ID("{E441ABE7-2CA3-4640-AE26-3789967925D7}");

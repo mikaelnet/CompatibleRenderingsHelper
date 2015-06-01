@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Stendahls.Sc.CompatibleRenderingsHelper</RootNamespace>
-    <AssemblyName>Stendahls.Sc.CompatibleRenderingsHelper</AssemblyName>
+    <RootNamespace>Stendahls.Sc.CompatibleRenderingsSynchronizer</RootNamespace>
+    <AssemblyName>Stendahls.Sc.CompatibleRenderingsSynchronizer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -40,6 +40,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\..\VCE\Website\bin\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
@@ -60,11 +61,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompatibleRenderingsHelperSavingEvent.cs" />
+    <Compile Include="CompatibleRenderingsSynchronizerSavingEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\CompatibleRenderingsHelper.config" />
+    <Content Include="App_Config\Include\Stendahls.CompatibleRenderingsSynchronizer.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\local VCE.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
